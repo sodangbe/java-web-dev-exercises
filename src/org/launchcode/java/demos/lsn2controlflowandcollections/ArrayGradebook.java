@@ -10,7 +10,7 @@ public class ArrayGradebook {
         int maxStudents = 30;
 
         String[] students = new String[maxStudents];
-        double[] grades = new double[maxStudents];
+        Double[] grades = new Double[maxStudents];
         Scanner input = new Scanner(System.in);
 
         String newStudent;

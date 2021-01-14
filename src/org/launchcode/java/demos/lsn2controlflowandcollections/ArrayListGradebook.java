@@ -7,21 +7,24 @@ public class ArrayListGradebook {
 
     public static void main(String[] args) {
 
-        ArrayList<String> students = new ArrayList<>();
-        ArrayList<Double> grades = new ArrayList<>();
+        ArrayList<String> students = new ArrayList();
+        ArrayList<Double> grades = new ArrayList();
         Scanner input = new Scanner(System.in);
         String newStudent;
+        int num = 1;
 
         System.out.println("Enter your students (or ENTER to finish):");
 
         // Get student names
         do {
+            System.out.print("Student "+ num +":" );
             newStudent = input.nextLine();
 
             if (!newStudent.equals("")) {
                 students.add(newStudent);
             }
-
+            num++;
+            System.out.println("Enter next student (or ENTER to finish):");
         } while(!newStudent.equals(""));
 
         // Get student grades
