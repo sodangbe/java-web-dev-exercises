@@ -22,4 +22,11 @@ public class Teacher {
     public int getYearsTeaching() {
         return yearsTeaching;
     }
+
+    public Teacher(String firstName, String lastName, String subject, int yearsTeaching) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.subject = subject;
+        this.yearsTeaching = yearsTeaching;
+    }
 }
